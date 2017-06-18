@@ -1,45 +1,72 @@
-*{
-	font-family: 'Montserrat', sans-serif;
-}
-
 body{
 	padding: 0;
 	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;	
 }
 
 .flex-container{
 	display: flex;
 }
 
-.navbar.flex-container{
-	justify-content: flex-end;
+/* NAVBAR */
+.navbar{
 	align-items: center;
-	background: linear-gradient(#76278F, #2B1E66);
-	height: 65px;
+	background: transparent;
+	border: none;
 	width: 100%;
-	padding: 20px;
 	position: fixed;
-	z-index: 1;
+	top: 0;
+	left: 0;
 }
 
-.navbar img{
-	width: 70px;
-	margin-right: auto;
-	margin-left: 20px;
+.navbar.flex-container{
+	justify-content: flex-start;
 }
 
-.navbar a{
+a{
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
 }
 
-.navbar a:hover{
-	color: #FF00BF;
+a:hover{
+	color: #FF00BF; /*rosado*/
 }
 
-.logo{
-	width: 60px;
-	height: 43px;
-	margin-top: 10px;
+.link{
+	padding: 20px;
+	display: inline-block;
 }
+.logo-container{
+	margin-right: auto;
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
+.flex-container .logo{
+	width: 60px;
+	height: auto;
+}
+
+.navbar button{
+	display: inline-block;
+	background-color: transparent;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	border: 2px solid white;
+	border-radius: 4px;
+	padding: 0 15px;
+	margin: 10px;
+}
+
+.menu button:hover{
+	color: #FF00BF; /*rosado*/
+}
+
+button#btnup{
+	display: none;
+}
+
+/* HEADER */
